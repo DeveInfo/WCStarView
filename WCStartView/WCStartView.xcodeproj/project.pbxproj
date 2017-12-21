@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0646211FEBA9E70054B721 /* WCImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA0646201FEBA9E70054B721 /* WCImage.bundle */; };
 		CA254AEA1FE9372500AE09FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA254AE91FE9372500AE09FE /* AppDelegate.swift */; };
 		CA254AEC1FE9372500AE09FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA254AEB1FE9372500AE09FE /* ViewController.swift */; };
 		CA254AEF1FE9372500AE09FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA254AED1FE9372500AE09FE /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA0646201FEBA9E70054B721 /* WCImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WCImage.bundle; sourceTree = "<group>"; };
 		CA254AE61FE9372500AE09FE /* WCStartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCStartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA254AE91FE9372500AE09FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA254AEB1FE9372500AE09FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				CA254AE91FE9372500AE09FE /* AppDelegate.swift */,
 				CA254AEB1FE9372500AE09FE /* ViewController.swift */,
 				CA254B171FE9377800AE09FE /* WCStarView.swift */,
+				CA0646201FEBA9E70054B721 /* WCImage.bundle */,
 				CA254AED1FE9372500AE09FE /* Main.storyboard */,
 				CA254AF01FE9372500AE09FE /* Assets.xcassets */,
 				CA254AF21FE9372500AE09FE /* LaunchScreen.storyboard */,
@@ -238,6 +241,7 @@
 				CA254AF41FE9372500AE09FE /* LaunchScreen.storyboard in Resources */,
 				CA254AF11FE9372500AE09FE /* Assets.xcassets in Resources */,
 				CA254AEF1FE9372500AE09FE /* Main.storyboard in Resources */,
+				CA0646211FEBA9E70054B721 /* WCImage.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
