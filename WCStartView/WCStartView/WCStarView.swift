@@ -89,7 +89,7 @@ class WCStarView: UIView
         {
             let mainBundle:String = Bundle.main.path(forResource: "WCImage", ofType: "bundle")!
 //            UIImage(contentsOfFile: <#T##String#>)
-            let string = NSURL.init(string: mainBundle)?.appendingPathComponent(imagename as String + ".png")
+            let string = NSURL.init(string: mainBundle)?.appendingPathComponent(imagename as String + "@2x.png")
             let image = UIImage(contentsOfFile: (string?.relativeString)!)
             
             
