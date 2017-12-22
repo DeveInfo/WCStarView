@@ -21,9 +21,9 @@ class WCStarView: UIView
 //    static let share = WCStarView.init()
 //    private init(){}
     
-    private let ForegroundStarImage = "b27_icon_star_yellow"
-    private let BackgroundStarImage = "b27_icon_star_gray"
-    public var startNum = 5
+    private let ForegroundStarImage:String = "b27_icon_star_yellow"
+    private let BackgroundStarImage:String = "b27_icon_star_gray"
+    public var startNum:NSInteger = 5
     public var rateStyle:RateStyle = .IncompleteStar
     public var isAnimate:Bool = true
     weak var delegate:WCStarRateViewDelegate?
