@@ -21,8 +21,8 @@ class WCStarView: UIView
 //    static let share = WCStarView.init()
 //    private init(){}
     
-    private let ForegroundStarImage = "WCImage.bundle/b27_icon_star_yellow"
-    private let BackgroundStarImage = "WCImage.bundle/b27_icon_star_gray"
+    private let ForegroundStarImage = "b27_icon_star_yellow"
+    private let BackgroundStarImage = "b27_icon_star_gray"
     public var startNum = 5
     public var rateStyle:RateStyle = .IncompleteStar
     public var isAnimate:Bool = true
@@ -87,7 +87,13 @@ class WCStarView: UIView
         
         for num in 0...(startNum - 1)
         {
-            let imageView = UIImageView(image: UIImage(named: imagename as String))
+            let mainBundle:String = Bundle.main.path(forResource: "WCImage", ofType: "bundle")!
+//            UIImage(contentsOfFile: <#T##String#>)
+            let string = NSURL.init(string: mainBundle)?.appendingPathComponent(imagename as String + ".png")
+            let image = UIImage(contentsOfFile: (string?.relativeString)!)
+            
+            
+            let imageView = UIImageView(image:image)
             imageView.frame = CGRect(x: CGFloat(num) * CGFloat(view.bounds.size.width) / CGFloat(startNum), y: 0, width: CGFloat(view.bounds.size.width) / CGFloat(startNum), height: view.bounds.size.height)
             imageView.contentMode = UIViewContentMode.scaleAspectFit
             view.addSubview(imageView)
