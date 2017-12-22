@@ -21,8 +21,8 @@ class WCStarView: UIView
 //    static let share = WCStarView.init()
 //    private init(){}
     
-    private let ForegroundStarImage:String = "b27_icon_star_yellow"
-    private let BackgroundStarImage:String = "b27_icon_star_gray"
+    private static let ForegroundStarImage:String = "b27_icon_star_yellow"
+    private static let BackgroundStarImage:String = "b27_icon_star_gray"
     public var startNum:NSInteger = 5
     public var rateStyle:RateStyle = .IncompleteStar
     public var isAnimate:Bool = true
@@ -55,7 +55,7 @@ class WCStarView: UIView
     }
     
     lazy var foregroundStarView :UIView = {
-        let foregroundStarView = self.createView(ForegroundStarImage as NSString)
+        let foregroundStarView = self.createView(WCStarView.ForegroundStarImage as NSString)
         foregroundStarView.clipsToBounds = true;
         self.addSubview(self.backgroundStarView)
         self.addSubview(foregroundStarView)
@@ -63,7 +63,7 @@ class WCStarView: UIView
     }()
     
     lazy var backgroundStarView :UIView = {
-        let backgroundStarView = self.createView(BackgroundStarImage as NSString)
+        let backgroundStarView = self.createView(WCStarView.BackgroundStarImage as NSString)
         backgroundStarView.clipsToBounds = true
         return backgroundStarView
     }()
